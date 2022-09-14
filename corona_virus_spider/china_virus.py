@@ -20,6 +20,7 @@ result = result[0]
 import json
 result = json.loads(result)
 result = result["component"]
+message = result[0]["message"]["inner"]
 # 获取国内当前数据
 result = result[0]['caseList']
 
@@ -37,6 +38,13 @@ ws.append(["省份","时间","累计确诊","死亡","治愈","新增确诊","�
 
 from tqdm import tqdm
 import time
+
+with open("data.txt","w") as f:
+    for each in tqdm(message,"热点信息采集"):
+        hotspot = each["conf_data"]
+        if hotspot != None:
+            hotspot = hotspot["notices"][0]["title"]
+            f.write(hotspot + "\n")
 for each in tqdm(result,"采集数据"):
     relativeTime = int(each['relativeTime'])  # 时间
     content_time = time.strftime('%Y-%m-%d %H:%M', time.localtime(relativeTime))
