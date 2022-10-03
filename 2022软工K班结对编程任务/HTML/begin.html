@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/begin.css">
+    <meta charset="UTF-8">
+    <title>逍遥骰</title>
+    <!--    比较简单，直接写html里了-->
+    <script type="text/javascript">
+        function popDiv() {
+            // 获取div元素
+            var popBox = document.getElementById("popDiv");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制两个div的显示与隐藏
+            popBox.style.display = "block";
+            popLayer.style.display = "none";
+
+            //设置无关元素隐藏
+            box1.style.visibility = "hidden";
+            box2.style.visibility = "hidden";
+        }
+
+        function closePop() {
+            // 获取弹出窗口元素
+            let popDiv = document.getElementById("popDiv");
+            popDiv.style.display = "none";
+            popLayer.style.display = "block";
+            box1.style.visibility = "visible";
+            box2.style.visibility = "visible";
+        }
+    </script>
+</head>
+<body>
+<div class="box0">
+    <div class="box1" id="box1" onclick="window.open('skelton.html')"></div>
+    <div class="box2" id="box2" onclick="window.open('ai.html')"></div>
+    <div class="instruction">
+        <div id="popLayer">
+            <button onclick="popDiv();"><img src="../pictures/label.jpg"></button>
+        </div>
+
+        <div id="popDiv">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closePop()">X</a>
+            </div>
+        </div>
+    </div>
+    <div id="player"  class="aplayer"></div>
+</div>
+</body>
+</html>

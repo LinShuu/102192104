@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../pictures/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tz {
+    width: 100px;
+    height: 100px;
+    margin: auto auto;
+    background-image: url("../pictures/tougu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.box0 {
+    padding: 10%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.box1 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    opacity: 0.6;
+
+}
+
+.box2 {
+    float: right;
+    width: 300px;
+    height: 300px;
+    opacity: 0.6;
+}
+
+.countbox{
+    width: 300px;
+    height: 400px;
+    margin: auto auto;
+    height: 200px;
+}
+
+.button{
+    width: 300px;
+    height: 400px;
+    margin: auto auto;
+    height: 200px;
+}
+
+.countbox1{
+    float: left;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+    background-image: url("../pictures/scoreboard.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.countbox2{
+    float: right;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+    background-image: url("../pictures/scoreboard.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    background-image: url("../pictures/blank.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    width: 30%;
+    height: 30%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+li:nth-of-type(n+7) {
+    margin-bottom: 0;
+}
+
+#beforebutton{
+    float: left;
+    height: 80px;
+    width: 120px;
+    opacity: 0.5;
+    background-image: url("../pictures/before.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#afterbutton{
+    float: right;
+    height: 80px;
+    width: 120px;
+    opacity: 0.5;
+    background-image: url("../pictures/after.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    text-align: center;
+}
