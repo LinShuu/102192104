@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/ai.css">
+    <script type="text/javascript" src="../JS/ai.js" defer="defer"></script>
+    <title>逍遥骰—人机对战</title>
+</head>
+<body id="bj">
+<div id="beforebutton" onclick="before(this)"></div>
+<div id="afterbutton" onclick="after(this)"></div>
+<div class="countbox1" id="countbox1">
+    0
+</div>
+<div class="countbox2" id="countbox2">
+    0
+</div>
+<div class="box0" id="box0">
+    <!--    左边玩家九宫格区域-->
+    <ul class="box1">
+        <li id="1" onclick="fl(this)"></li>
+        <li id="2" onclick="fl(this)"></li>
+        <li id="3" onclick="fl(this)"></li>
+        <li id="4" onclick="fl(this)"></li>
+        <li id="5" onclick="fl(this)"></li>
+        <li id="6" onclick="fl(this)"></li>
+        <li id="7" onclick="fl(this)"></li>
+        <li id="8" onclick="fl(this)"></li>
+        <li id="9" onclick="fl(this)"></li>
+    </ul>
+    <!--    右边电脑九宫格区域-->
+    <ul class="box2">
+        <li id="10" onclick="fri(this)"></li>
+        <li id="11" onclick="fri(this)"></li>
+        <li id="12" onclick="fri(this)"></li>
+        <li id="13" onclick="fri(this)"></li>
+        <li id="14" onclick="fri(this)"></li>
+        <li id="15" onclick="fri(this)"></li>
+        <li id="16" onclick="fri(this)"></li>
+        <li id="17" onclick="fri(this)"></li>
+        <li id="18" onclick="fri(this)"></li>
+    </ul>
+    <!--    中间骰子区域-->
+    <div class="tz" id="ds" onclick="f()">
+    </div>
+</div>
+</body>
+</html>

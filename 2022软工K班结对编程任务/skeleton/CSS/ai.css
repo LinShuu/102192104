@@ -1,0 +1,180 @@
+@font-face {
+    font-family: '白舟白雨書体';
+    src: url("../font/白舟白雨書体.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../pictures/decide.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tz {
+    width: 150px;
+    height: 150px;
+    margin: 15% auto;
+    background-image: url("../pictures/tz/le4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
+.box0 {
+    padding: 10%;
+    padding-top: 15%;
+    height: 400px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.box1 {
+    float: left;
+    width: 350px;
+    height: 350px;
+    opacity: 0.7;
+
+}
+
+.box2 {
+    float: right;
+    width: 350px;
+    height: 350px;
+    opacity: 0.7;
+}
+
+.button{
+    width: 300px;
+    height: 400px;
+    margin: auto auto;
+    height: 200px;
+}
+
+.countbox1{
+    float: left;
+    height: 100px;
+    width: 200px;
+    background-image: url("../pictures/scoreboardl.png");
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "白舟白雨書体";
+    text-align: right;
+    line-height: 100px;
+    background-position: left;
+
+}
+.countbox2{
+    float: right;
+    height: 100px;
+    width: 230px;
+    background-image: url("../pictures/scoreboardr.png");
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "白舟白雨書体";
+    text-align: left;
+    line-height: 100px;
+    background-position: right;
+}
+
+.countbox1{
+    position: absolute;
+    margin-left: 12.2%;
+    margin-top: 8%;
+    visibility: hidden;
+}
+
+.countbox2{
+    position: absolute;
+    margin-left: 69%;
+    margin-top: 8%;
+    visibility: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+.box1{
+    background-image: url("../pictures/board_l.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.box2{
+    background-image: url("../pictures/board_r.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    border-radius: 30px;
+    /*background-color: antiquewhite;*/
+    background-image: url("../pictures/transparent.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6.5%;
+    padding-top: 5.5%;
+    padding-bottom: 2.5%;
+    padding-right: 0.5%;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    width: 20%;
+    height: 20%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+
+
+li:nth-of-type(n+7) {
+    margin-bottom: 0;
+}
+
+li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+#beforebutton{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 54%;
+    height: 90px;
+    width: 180px;
+    background-image: url("../pictures/before.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+#afterbutton{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 25%;
+    height: 90px;
+    width: 180px;
+    background-image: url("../pictures/after.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
